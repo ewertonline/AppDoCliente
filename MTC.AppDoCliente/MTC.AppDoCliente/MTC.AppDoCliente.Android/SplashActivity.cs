@@ -13,7 +13,7 @@ using Android.Support.V7.App;
 
 namespace MTC.AppDoCliente.Droid
 {
-    [Activity(Label = "Acompanhe seu veículo", Icon = "@drawable/icon", Theme = "@style/splashscreen", MainLauncher = true, NoHistory = true)]
+    [Activity(Label = "MonitoraCar Cliente", Icon = "@drawable/icon", Theme = "@style/splashscreen", MainLauncher = true, NoHistory = true)]
     public class SplashActivity : AppCompatActivity
     {
         protected override void OnResume()

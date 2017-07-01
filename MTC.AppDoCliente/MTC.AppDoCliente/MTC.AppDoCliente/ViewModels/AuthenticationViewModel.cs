@@ -10,7 +10,7 @@ using Xamarin.Forms;
 
 namespace MTC.AppDoCliente.ViewModels
 {
-    public class AuthenticationViewModel : BaseViewModel //, INotifyPropertyChanged
+    public class AuthenticationViewModel : BaseViewModel
     {
         public AuthenticationViewModel()
         {

@@ -1,18 +1,24 @@
 ﻿using MTC.AppDoCliente.Services;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MTC.AppDoCliente.ViewModels
 {
-    public class BaseViewModel
+    public class BaseViewModel : INotifyPropertyChanged
     {
         /// <summary>
         /// Get the azure service instance
         /// </summary>
         public FunilariaService DadosFunilaria = new FunilariaService();
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        void OnPropertyChanged([CallerMemberName]string propertyName = "") =>
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
         //bool isBusy = false;
         //public bool IsBusy

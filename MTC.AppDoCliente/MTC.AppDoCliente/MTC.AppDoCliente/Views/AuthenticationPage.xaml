@@ -2,12 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MTC.AppDoCliente.Views.AuthenticationPage"
-             Title="AuthenticationPage">
-    <StackLayout Padding="5" VerticalOptions="CenterAndExpand">
-        <Label Text="Placa:" />
-        <Entry x:Name="txtUsuario" Placeholder="Exemplo: ABC-9876" />
-        <Label Text="Senha:" />
-        <Entry x:Name="txtSenha" IsPassword="true" Placeholder="Três primeiros dígitos CPF" />
+             Title="AuthenticationPage"
+             BackgroundImage="backgroundImage">
+    <StackLayout Padding="10" VerticalOptions="CenterAndExpand">
+        <Image Source="logoTransparente"></Image>
+        <Label Text="Placa:" TextColor="White" />
+        <Entry x:Name="txtUsuario" Placeholder="Exemplo: ABC-9876" TextColor="White" PlaceholderColor="White" />
+        <Label Text="Senha:" TextColor="White" />
+        <Entry x:Name="txtSenha" IsPassword="true" Placeholder="Três primeiros dígitos CPF" TextColor="White" PlaceholderColor="White" />
         <Button Text="ENTRAR" Clicked="OnLoginButtonClicked" />
     </StackLayout>
 </ContentPage>

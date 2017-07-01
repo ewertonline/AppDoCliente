@@ -41,15 +41,24 @@
     <Compile Include="Models\Authentication.cs" />
     <Compile Include="Models\CustomerData.cs" />
     <Compile Include="Models\ImageGallery.cs" />
+    <Compile Include="Models\MainMenuItem.cs" />
     <Compile Include="Models\VehicleHistory.cs" />
     <Compile Include="Services\FunilariaService.cs" />
     <Compile Include="ViewModels\AuthenticationViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\ContactUsViewModel.cs" />
     <Compile Include="ViewModels\CustomerDataViewModel.cs" />
     <Compile Include="ViewModels\ImageGalleryViewModel.cs" />
+    <Compile Include="ViewModels\MainMenuViewModel.cs" />
     <Compile Include="ViewModels\VehicleHistoryViewModel.cs" />
+    <Compile Include="Views\AboutUs.xaml.cs">
+      <DependentUpon>AboutUs.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\AuthenticationPage.xaml.cs">
       <DependentUpon>AuthenticationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ContactUsPage.xaml.cs">
+      <DependentUpon>ContactUsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\CustomerDataPage.xaml.cs">
       <DependentUpon>CustomerDataPage.xaml</DependentUpon>
@@ -58,6 +67,12 @@
       <DependentUpon>ImageGalleryPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\MainDetailPage.xaml.cs">
+      <DependentUpon>MainDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainMenuPage.xaml.cs">
+      <DependentUpon>MainMenuPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -109,6 +124,30 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\VehicleHistoryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MainMenuPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MainDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ContactUsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\AboutUs.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
